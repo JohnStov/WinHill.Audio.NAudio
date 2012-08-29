@@ -39,16 +39,28 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="WinHill.Audio">
-      <HintPath>..\packages\WinHill.Audio.0.18.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Configuration\AsioDevice.cs" />
+    <Compile Include="Configuration\AsioTechnology.cs" />
+    <Compile Include="Configuration\AudioSettings.cs" />
+    <Compile Include="Configuration\DirectSoundDevice.cs" />
+    <Compile Include="Configuration\DirectSoundTechnology.cs" />
+    <Compile Include="Configuration\WasapiDevice.cs" />
+    <Compile Include="Configuration\WasapiTechnology.cs" />
+    <Compile Include="Configuration\WavePlayerAdapter.cs" />
+    <Compile Include="Configuration\WaveOutDevice.cs" />
+    <Compile Include="Configuration\WaveOutTechnology.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WinHill.Audio\WinHill.Audio\WinHill.Audio.csproj">
+      <Project>{0FD77D60-2A07-402C-9A7A-5ABA20663BF5}</Project>
+      <Name>WinHill.Audio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
