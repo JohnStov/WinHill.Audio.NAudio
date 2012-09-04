@@ -39,8 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="WinHill.Audio">
-      <HintPath>..\packages\WinHill.Audio.0.18.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
+    <Reference Include="WinHill.Audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinHill.Audio.0.20.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
