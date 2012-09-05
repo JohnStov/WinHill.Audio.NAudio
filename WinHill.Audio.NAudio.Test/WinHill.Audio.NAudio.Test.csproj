@@ -49,13 +49,25 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinHill.Audio">
+      <HintPath>..\packages\WinHill.Audio.0.20.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Configuration\AsioDeviceTest.cs" />
+    <Compile Include="Configuration\AudioSettingsTest.cs" />
+    <Compile Include="Configuration\DirectSoundDeviceTest.cs" />
+    <Compile Include="Configuration\WaveOutDeviceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinHill.Audio.NAudio\WinHill.Audio.NAudio.csproj">
+      <Project>{1FFB46EC-AAE8-4BB5-B14A-75AF64B357A0}</Project>
+      <Name>WinHill.Audio.NAudio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

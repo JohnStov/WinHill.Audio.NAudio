@@ -44,7 +44,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Configuration\AsioDevice.cs" />
+    <Compile Include="Configuration\AsioTechnology.cs" />
+    <Compile Include="Configuration\DirectSoundDevice.cs" />
+    <Compile Include="Configuration\DirectSoundTechnology.cs" />
+    <Compile Include="Configuration\WasapiDevice.cs" />
+    <Compile Include="Configuration\WasapiTechnology.cs" />
+    <Compile Include="Configuration\WaveOutDevice.cs" />
+    <Compile Include="Configuration\WaveOutTechnology.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

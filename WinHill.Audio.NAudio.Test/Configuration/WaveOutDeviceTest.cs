@@ -1,0 +1,31 @@
+﻿using NUnit.Framework;
+using Should.Fluent;
+using WinHill.Audio.Configuration;
+
+namespace WinHill.Audio.NAudio.Test.Configuration
+{
+    [TestFixture]
+    public class WaveOutDeviceTest
+    {
+        [Test]
+        public void CanCreateDevice()
+        {
+            var device = new WaveOutDevice(0, new WaveOutCapabilities());
+
+            device.Should().Not.Be.Null();
+            device.Player.Should().Not.Be.Null();
+            
+            device.Dispose();
+        }
+
+        [Test]
+        public void CanCreatePlayer()
+        {
+            var device = new WaveOutDevice(0, new WaveOutCapabilities());
+
+            device.Player.Should().Not.Be.Null();
+
+            device.Dispose();
+        }
+    }
+}
