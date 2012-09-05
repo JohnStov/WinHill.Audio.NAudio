@@ -67,8 +67,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WinHill.Audio">
-      <HintPath>..\packages\WinHill.Audio.0.20.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
+    <Reference Include="WinHill.Audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinHill.Audio.0.21.0-beta\lib\net40\WinHill.Audio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
