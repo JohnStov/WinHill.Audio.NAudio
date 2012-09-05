@@ -1,11 +1,12 @@
-﻿namespace WinHill.Audio.Configuration
+﻿namespace WinHill.Audio.NAudio.Configuration
 {
     using System.Diagnostics.Contracts;
-
     using System.Linq;
     using System.Collections.Generic;
 
-    using NAudio.CoreAudioApi;
+    using WinHill.Audio.Configuration;
+
+    using global::NAudio.CoreAudioApi;
 
     public class WasapiTechnology : TechnologyBase
     {

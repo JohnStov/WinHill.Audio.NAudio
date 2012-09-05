@@ -1,8 +1,8 @@
-﻿using NAudio.Wave;
-
-namespace WinHill.Audio.NAudio.Configuration
+﻿namespace WinHill.Audio.NAudio.Configuration
 {
     using Audio.Configuration;
+
+    using global::NAudio.Wave;
 
     public class AsioDevice : DeviceBase
     {
@@ -11,7 +11,7 @@ namespace WinHill.Audio.NAudio.Configuration
         public AsioDevice(string name)
         {
             this.name = name;
-            Player = new AsioOut(name);
+            Player = new WavePlayerConverter(new AsioOut(name));
         }
 
         public override string Name { get { return name; } }

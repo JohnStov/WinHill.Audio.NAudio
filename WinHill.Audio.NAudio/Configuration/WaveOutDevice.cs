@@ -1,8 +1,8 @@
 ﻿namespace WinHill.Audio.Configuration
 {
-    using System;
+    using WinHill.Audio.NAudio.Configuration;
 
-    using NAudio.Wave;
+    using global::NAudio.Wave;
 
     public class WaveOutDevice : DeviceBase
     {
@@ -11,7 +11,7 @@
         public WaveOutDevice(int id, WaveOutCapabilities capabilities)
         {
             this.capabilities = capabilities;
-            Player = new WaveOut { DeviceNumber = id };
+            Player = new WavePlayerConverter(new WaveOut { DeviceNumber = id });
         }
 
         public override string Name { get { return capabilities.ProductName; } }

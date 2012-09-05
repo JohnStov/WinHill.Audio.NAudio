@@ -2,8 +2,10 @@
 {
     using System.Diagnostics.Contracts;
 
-    using NAudio.CoreAudioApi;
-    using NAudio.Wave;
+    using WinHill.Audio.NAudio.Configuration;
+
+    using global::NAudio.CoreAudioApi;
+    using global::NAudio.Wave;
 
     public class WasapiDevice : DeviceBase
     {
@@ -13,7 +15,7 @@
         public WasapiDevice(MMDevice device)
         {
             this.device = device;
-            player = new WasapiOut(device, AudioClientShareMode.Exclusive, false, 100);
+            player = new WavePlayerConverter(new WasapiOut(device, AudioClientShareMode.Exclusive, false, 100));
         }
 
         public override string Name 

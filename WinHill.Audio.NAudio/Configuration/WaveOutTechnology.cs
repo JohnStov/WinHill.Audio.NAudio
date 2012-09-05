@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using NAudio.Wave;
+    using global::NAudio.Wave;
 
     public class WaveOutTechnology : TechnologyBase
     {

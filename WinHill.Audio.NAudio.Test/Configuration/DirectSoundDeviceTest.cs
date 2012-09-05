@@ -1,9 +1,13 @@
-﻿using NUnit.Framework;
-using Should.Fluent;
-using WinHill.Audio.Configuration;
-
-namespace WinHill.Audio.NAudio.Test.Configuration
+﻿namespace WinHill.Audio.NAudio.Test.Configuration
 {
+    using NUnit.Framework;
+
+    using Should.Fluent;
+
+    using WinHill.Audio.NAudio.Configuration;
+
+    using global::NAudio.Wave;
+
     [TestFixture]
 	public class DirectSoundDeviceTest
 	{

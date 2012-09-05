@@ -1,6 +1,8 @@
-﻿namespace WinHill.Audio.Configuration
+﻿namespace WinHill.Audio.NAudio.Configuration
 {
-    using NAudio.Wave;
+    using WinHill.Audio.Configuration;
+
+    using global::NAudio.Wave;
 
     public class DirectSoundDevice : DeviceBase
     {
@@ -9,7 +11,7 @@
         public DirectSoundDevice(DirectSoundDeviceInfo info)
         {
             this.info = info;
-            Player = new DirectSoundOut(info.Guid);
+            Player = new WavePlayerConverter(new DirectSoundOut(info.Guid));
         }
 
         public override string Name { get { return info.Description; } }
