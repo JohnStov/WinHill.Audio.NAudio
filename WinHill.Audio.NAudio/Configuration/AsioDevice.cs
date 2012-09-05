@@ -1,6 +1,6 @@
 ﻿namespace WinHill.Audio.NAudio.Configuration
 {
-    using Audio.Configuration;
+    using WinHill.Audio.Configuration;
 
     using global::NAudio.Wave;
 

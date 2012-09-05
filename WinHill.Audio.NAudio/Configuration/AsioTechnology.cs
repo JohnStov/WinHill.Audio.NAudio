@@ -1,9 +1,9 @@
-﻿using WinHill.Audio.NAudio.Configuration;
-
-namespace WinHill.Audio.Configuration
+﻿namespace WinHill.Audio.NAudio.Configuration
 {
     using System.Collections.Generic;
     using System.Linq;
+
+    using WinHill.Audio.Configuration;
 
     using global::NAudio.Wave;
 

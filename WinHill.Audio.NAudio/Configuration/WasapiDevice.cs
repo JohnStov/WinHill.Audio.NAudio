@@ -1,11 +1,13 @@
-﻿namespace WinHill.Audio.Configuration
+﻿namespace WinHill.Audio.NAudio.Configuration
 {
     using System.Diagnostics.Contracts;
 
-    using WinHill.Audio.NAudio.Configuration;
+    using WinHill.Audio.Configuration;
 
     using global::NAudio.CoreAudioApi;
     using global::NAudio.Wave;
+
+    using IWavePlayer = WinHill.Audio.Configuration.IWavePlayer;
 
     public class WasapiDevice : DeviceBase
     {

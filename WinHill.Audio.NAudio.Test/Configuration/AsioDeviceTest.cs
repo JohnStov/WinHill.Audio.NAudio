@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Should.Fluent;
-using WinHill.Audio.Configuration;
+
 using WinHill.Audio.NAudio.Configuration;
 
 namespace WinHill.Audio.NAudio.Test.Configuration

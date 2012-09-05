@@ -2,7 +2,8 @@
 {
     using NUnit.Framework;
     using Should.Fluent;
-    using WinHill.Audio.Configuration;
+
+    using WinHill.Audio.NAudio.Configuration;
 
     using global::NAudio.Wave;
 
