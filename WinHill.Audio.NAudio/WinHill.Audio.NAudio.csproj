@@ -33,14 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NAudio">
-      <HintPath>..\packages\NAudio.1.5.4-beta\lib\net20\NAudio.dll</HintPath>
+    <Reference Include="NAudio, Version=1.5.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NAudio.1.5.5-beta\lib\net20\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="WinHill.Audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WinHill.Audio.0.1.8-alpha\lib\net40\WinHill.Audio.dll</HintPath>
+      <HintPath>..\packages\WinHill.Audio.0.1.9-alpha\lib\net40\WinHill.Audio.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
